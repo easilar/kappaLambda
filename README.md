@@ -16,8 +16,13 @@ git fetch origin
 git checkout v8.0.1
 scramv1 b clean; scramv1 b # always make a clean build
 ```
-
-
+```
+cd $CMSSW_BASE/src/
+git clone https://github.com/easilar/kappaLambda.git
+cd kappaLambdaAna 
+cp kappaLambdamodel.py ../HiggsAnalysis/CombinedLimit/python/kappaLambdamodel.py
+```
+```
 text2workspace.py datacard.txt -P HiggsAnalysis.CombinedLimit.kappaLambdamodel:kLambda -o testWSdatacard.root
-
 combine -M AsymptoticLimits testWSdatacard.root
+```
