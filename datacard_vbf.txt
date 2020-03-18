@@ -11,10 +11,10 @@ observation 207
 # the second 'process' line must have a positive number for backgrounds, and 0 for signal
 # then we list the independent sources of uncertainties, and give their effect (syst. error)
 # on each process and bin
-bin           htt_8TeV  htt_8TeV  htt_8TeV  htt_8TeV 
-process       ggH    	  VBF       WH        Bckg 
-process         0      	   -1       -2         1
-rate          27.4        17.5     1.3       156.2
+bin          htt_8TeV   htt_8TeV 
+process        VBF        Bckg 
+process     	-1         1
+rate           17.5      156.2
 ------------
 deltaS  lnN    1.1    1.1  1.1    -     
 deltaB  lnN      -     -    -   1.073   
