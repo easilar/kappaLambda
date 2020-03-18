@@ -26,3 +26,7 @@ cp kappaLambdamodel.py ../HiggsAnalysis/CombinedLimit/python/kappaLambdamodel.py
 text2workspace.py datacard.txt -P HiggsAnalysis.CombinedLimit.kappaLambdamodel:kLambda -o testWSdatacard.root
 combine -M AsymptoticLimits testWSdatacard.root
 ```
+Run with the existing kappalambda model from combinetools
+```
+text2workspace.py datacard_ggh.txt -P HiggsAnalysis.CombinedLimit.TrilinearCouplingModels:trilinearHiggs -o testWSdatacard_ggh.root
+```
