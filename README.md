@@ -29,4 +29,6 @@ combine -M AsymptoticLimits testWSdatacard.root
 Run with the existing kappalambda model from combinetools
 ```
 text2workspace.py datacard_ggh.txt -P HiggsAnalysis.CombinedLimit.TrilinearCouplingModels:trilinearHiggs -o testWSdatacard_ggh.root
+combine -M MultiDimFit -d testWSdatacard_ggh.root --algo grid --setParameterRanges k_lambda=-20,20 --cminDefaultMinimizerStrategy 0 --saveNLL -m 125
+plot1DScan.py --POI="k_lambda" higgsCombineTest.MultiDimFit.mH125.root
 ```
